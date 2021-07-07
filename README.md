@@ -1,4 +1,4 @@
-## Uri Online Judge Solutions
+# Uri Online Judge Solutions
 
 Sejá bem vindo ao meu repositório de soluções de exercícios do UriOnlineJuge.
 
