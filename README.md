@@ -2,7 +2,7 @@
 
 Sejá bem vindo ao meu repositório de soluções de exercícios do UriOnlineJuge.
 
-Neste repositório você pode navegar por todas as soluções desenvolvidas para os exercícios existentes na plataforma.
+Neste repositório você pode navegar por todas as minhas soluções desenvolvidas para exercícios existentes na plataforma.
   
 É isso! Eai, bora codar ?!
 
