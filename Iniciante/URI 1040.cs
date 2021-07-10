@@ -3,51 +3,41 @@ using System;
 class URI
 {
 
-  public static void Main(string[] args)
-  {
+  public static void Main(string[] args){
+    double a, b, c, d, last, m;
+    
+    a = Double.Parse(Console.ReadLine());
+    b = Double.Parse(Console.ReadLine());
+    c = Double.Parse(Console.ReadLine());
+    d = Double.Parse(Console.ReadLine());
 
-    double n1, n2, n3, n4, media, exame, mediafinal;
+    m = (a * 2 + b * 3 + c * 4 + d) / 10;
 
-    string line = Console.ReadLine();
+    Console.Write("Media: {0:F1}\n", m);
 
-    string[] values = line.Split(' ');
-    n1 = Convert.ToDouble(values[0]);
-    n2 = Convert.ToDouble(values[1]);
-    n3 = Convert.ToDouble(values[2]);
-    n4 = Convert.ToDouble(values[3]);
-
-    media = (n1 * 0.2 + n2 * 0.3 + n3 * 0.4 + n4 * 0.1);
-
-    Console.WriteLine("Media: {0}", media.ToString("#0.0"));
-
-    if (media >= 7)
+    if (m >= 7.0)
     {
-      Console.WriteLine("Aluno aprovado.");
+        Console.Write("Aluno aprovado.\n");
     }
-    else if (media < 7 && media >= 5)
+    else if (m >= 5.0)
     {
-      Console.WriteLine("Aluno em exame.");
+        Console.Write("Aluno em exame.\n");
+        last = Double.Parse(Console.ReadLine());
 
-      exame = Double.Parse(Console.ReadLine());
-
-      Console.WriteLine("Nota do exame: {0}", exame.ToString("#0.0"));
-
-      mediafinal = (media + exame) / 2;
-
-      if (mediafinal >= 5)
-      {
-        Console.WriteLine("Aluno aprovado.");
-      }
-      else
-      {
-        Console.WriteLine("Aluno reprovado.");
-      }
-      Console.WriteLine("Media final: {0}", mediafinal.ToString("#0.0"));
+        Console.Write("Nota do exame: {0:F1}\n", last);
+        if (last + m / 2.0 > 5.0)
+        {
+            Console.Write("Aluno aprovado.\n");
+        }
+        else
+        {
+            Console.Write("Aluno reprovado.\n");
+        }
+        Console.Write("Media final: {0:F1}\n", (last + m) / 2.0);
     }
     else
     {
-      Console.WriteLine("Aluno reprovado.");
+        Console.Write("Aluno reprovado.\n");
     }
-
-  }
+}
 }

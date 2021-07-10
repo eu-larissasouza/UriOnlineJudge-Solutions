@@ -6,15 +6,15 @@ class URI
   public static void Main(string[] args)
   {
 
-    double num;
-    int val = 0, i;
+    double[] num= new double[6];
+    int val = 0; int i;
 
-    for (i = 1; i <= 6; i++)
+    for (i = 0; i <= 5; i++)
     {
-      num = Double.Parse(Console.ReadLine());
-      if (num >= 0)
+      num[i] = Double.Parse(Console.ReadLine());
+      if (num[i] > 0)
       {
-        val += val + 1;
+        val++;
       }
     }
 
